@@ -55,14 +55,27 @@ Users are able to:
 
 ### What I learned
 
-As someone who's still on that journey of learing React, wrapping up this Todo app (using hooks like useState for task lists, event handlers for add/edit/delete, and conditional rendering for completed items), and using the .map() method to loop over the tasks array and render each as a component, with unique key props to help React efficiently update the DOM was exciting. I enjoyed the fact that i was exposed me to working with react hooks like useState and useEffects to Show/hide elements when needed, strikethrough text for completed tasks when toggled and also store the data in local storage depending on how and when todo tasks are added or updated.
+* Use of "TodoContext" 
+--For storing related context, properties, interactivities. Making their values dynamically accessible to various component by importing the created custom hook "useTodos".
+
+* The Use of react hooks e.g useState 
+--for handling event like adding todos using the "addTodo" function, where object of "newTodo" const bearing props like unique IDs, text and completed is created each time "Enter" or "add" button is triggered.
+--clearing todos using the "clearTodo" function by targeting its unique ID in the array,.
+--conditional rendering of completed items using "toggle" and targeting specifically their "id".
+--strikethrough text for completed tasks when by iterating over the img icon.
+--toggling between light and dark mode using the intialized state actions "theme" & setTheme.
+--filtering and clearing completed todo item with "clearCompleted"
+--Use of "handleDragStart", "handleDragOver" and "reorderTodos to drag and reorder items by targeting their (index) when (e) events like "onDragStart", "onDragOver", "onDragLeave", "onDrop" and "onDragEnd" are triggered..
+
+* useEffects hook: 
+-- To storing data in local storage depending on when "todos" task updates.
 
 
 ### Continued development
 
--Current State: it uses useState for task management, which is sufficient for a small-scale app but may become cumbersome with complex features.
--Current Code: My app’s codebase is functional but may include repetitive logic or tightly coupled components.
-Transition to a more scalable solution is necessary, thus, suggestions will be greatly appreciated
+- Current State: it uses useState for task management, which is sufficient for a small-scale app but may become cumbersome with complex features.
+- Current Code: My app’s codebase is functional but may include repetitive logic or tightly coupled components.
+- Transition to a more scalable solution is necessary, thus, suggestions will be greatly appreciated
 
 
 ### Useful resources
