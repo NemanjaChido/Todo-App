@@ -1,10 +1,10 @@
 import tick from '../assets/tick.png'     //import click image
 import not_tick from '../assets/not_tick.png';        //import not-click image
 import delete_icon from '..//assets/delete_icon.png'; //import delete image
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 import { useTodos } from './TodoContext'; //import useTodos custom hook
 
-const Todolist = ({text, index, completed, id, clearTodo, toggle, onDragStart, onDragOver, onDrop, onDragLeave, onDragEnd}) => {
+const Todolist = ({text, index, completed, id, clearTodo, toggle}) => {
   const [hover, setHover] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
   const [isOver, setIsOver] = useState(false);
