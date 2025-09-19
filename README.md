@@ -40,7 +40,7 @@ Users are able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/NemanjaChido/Todo-App.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://nemanjachido.github.io/Todo-App/)
 
 
 ### Built with
